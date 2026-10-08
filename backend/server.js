@@ -1,10 +1,10 @@
 // Entry point: connect to MongoDB, seed the first admin, start listening.
-const dns = require('dns');
+// const dns = require('dns');
 
-dns.setServers([
-  '8.8.8.8',
-  '1.1.1.1'
-]);
+// dns.setServers([
+//   '8.8.8.8',
+//   '1.1.1.1'
+// ]);
 const mongoose = require('mongoose');
 const { MONGODB_URI, PORT } = require('./src/config');
 const app = require('./src/app');
