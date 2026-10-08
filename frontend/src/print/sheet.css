@@ -1,0 +1,39 @@
+/* Result sheet (A4). Every rule is scoped under .sheet so it cannot affect the rest of the app. */
+.sheet {width:210mm;height:297mm;background:#fdfdf0;position:relative;transform-origin:0 0;color:#000;font:8pt Arial,sans-serif;box-shadow:0 2px 10px #0004}
+.sheet>svg.bd {position:absolute;inset:0;width:100%;height:100%}
+.sheet .wm {position:absolute;left:50%;top:52%;width:120mm;transform:translate(-50%,-50%);opacity:.13;height:110mm;mix-blend-mode:multiply}
+.sheet .in {position:absolute;inset:11mm 12mm;display:flex;flex-direction:column}
+.sheet .hd {display:flex;align-items:center;gap:3mm}
+.sheet .hl {width:27mm;height:25mm}
+.sheet .hd div {flex:1;text-align:center;line-height:1.35}
+.sheet .nm {font-size:27pt;font-weight:bold;font-style:italic;letter-spacing:.5px;background:linear-gradient(90deg,#2e8b2e,#1b3a8c 30%,#e0561b 48%,#4caf20 65%,#1b2f6e 85%);-webkit-background-clip:text;background-clip:text;color:transparent;line-height:1.1}
+.sheet .sub {font:bold 12.5pt Georgia,serif}
+.sheet .ad {font-size:8.5pt;color:#c0392b}
+.sheet .ad i {font-style:normal;color:#222}
+.sheet .ttl {text-align:center;font-weight:bold;font-size:11pt;text-decoration:underline;margin:2mm 0 2mm}
+.sheet .fill {font-family:Caveat,cursive;font-size:12pt;color:#1a1a80;font-weight:600}
+.sheet .inf {display:flex;flex-wrap:wrap;gap:1mm 3mm;margin-bottom:1.5mm;font-weight:bold;font-size:8.5pt}
+.sheet .inf span {display:flex;align-items:baseline;gap:1mm;white-space:nowrap}
+.sheet .inf .l {flex:1;border-bottom:1px dotted #000;min-width:12mm;padding:0 1mm}
+.sheet table {border-collapse:collapse;width:100%}
+.sheet td, .sheet th {border:1px solid #000;padding:0 1mm;text-align:center}
+.sheet .gt th {font-weight:normal;font-size:8pt;line-height:1.35;height:17mm}
+.sheet .gt td {height:5.1mm;font-size:8pt}
+.sheet .gt td:first-child {text-align:left}
+.sheet .gt td.f {font-family:Caveat,cursive;font-size:11pt;color:#1a1a80;font-weight:600;line-height:1}
+.sheet .tot {display:flex;justify-content:space-between;border:1px solid #000;border-top:0;padding:1mm 2mm;font-weight:bold}
+.sheet .mid {display:flex;justify-content:space-between;margin-top:2mm;gap:6mm}
+.sheet .beh {flex:1.3}
+.sheet .beh th, .sheet .beh td {font-size:8pt;height:5mm}
+.sheet .beh td:first-child {text-align:left}
+.sheet .beh h4, .sheet .scl h4 {margin:0 0 1mm;text-align:center;font-size:8.5pt}
+.sheet .scl {flex:1}
+.sheet .scl td {font-size:8pt;height:4.6mm;text-align:left}
+.sheet .ft {margin-top:2mm;font-size:8.5pt}
+.sheet .ft div {display:flex;gap:2mm;align-items:baseline;border-bottom:1px dotted #000;margin-top:2.2mm;min-height:5mm}
+.sheet .ft div.nb {border:0}
+.sheet .ft div span.fill {flex:1}
+.sheet .stamp {margin-top:auto;font-size:8.5pt}
+.sheet .lg {background:var(--logo) center/contain no-repeat;mix-blend-mode:multiply}
+.sheet {-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.sheet .draftmark {position:absolute;left:50%;top:50%;transform:translate(-50%,-50%) rotate(-30deg);font:bold 110pt Arial,sans-serif;letter-spacing:8px;color:#c62828;opacity:.18;pointer-events:none;z-index:5}
