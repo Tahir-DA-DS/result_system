@@ -187,4 +187,4 @@ More detail is in [DEPLOY.md](DEPLOY.md) and each folder's `ARCHITECTURE.md`.
 - [`frontend/ARCHITECTURE.md`](frontend/ARCHITECTURE.md): frontend structure and conventions
 
 ## License
-Private school project. Add a `LICENSE` file if you plan to share the code publicly.
+MIT License
