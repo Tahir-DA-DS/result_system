@@ -30,7 +30,7 @@ export function buildSheet(pupil, cls, term, { draft = false } = {}) {
     h('span', {}, ...sup('2', 'nd'), ' Term Average: ', h('span', { class: 'fill' }, pupil.terms[1] ?? '')),
     h('span', {}, ...sup('3', 'rd'), ' Term Average: ', h('span', { class: 'fill' }, pupil.terms[2] ?? '')));
   const footer = secondary
-    ? [avgLine, line('Status:', rep.st), line("Manager's Remark:", rep.rem), line('Times School Open:', term.open), line('Times Pupil Attended:', rep.att), line("Principal's Remark:", rep.prin), line('Date:', term.date)]
+    ? [avgLine, line('Status:', rep.st), line("Manager's Remark:", rep.rem), line('Times School Open:', term.open), line('Days of Attendance:', rep.att), line("Principal's Remark:", rep.prin), line('Date:', term.date)]
     : [avgLine, line("Form Teacher's Remark:", rep.rem), line('Times School Open:', term.open), line('Days of Attendance:', rep.att),
        line((cls.level === 'nursery' ? "Head Teacher's" : "Principal's") + ' Remark:', rep.prin)];
 
